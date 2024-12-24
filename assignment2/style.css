@@ -135,11 +135,14 @@ ul {
   
   padding: 0;
   margin-bottom: 20px; 
+  list-style:none;
 }
-
 li {
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
+  padding-left:20px ;
 }
+li::before { content: "+";  color: #fff;  font-size: 10px; font-weight:900; }
+
 .content-container {
   display: flex;
   width: 100%;
@@ -150,13 +153,16 @@ li {
 }
 .contact-section {
   margin-top: 40px;
+  
 }
 .contact-section .divider {
   border-top: 2px solid white;
   margin: 20px 0;
+
 }
 .contact-info p {
   margin: 5px 0;
+  
 }
 .contact-info a {
   color: #f7f4f4;
@@ -167,12 +173,13 @@ li {
 }
 .contactspan {
   font-size:35px;
+
 }
 .form-container {
   background-color: #151516;
   padding: 60px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(230, 228, 228, 0.882);
+  
   width: 60%;
   max-width: 600px;
   margin-bottom: 10%;
@@ -230,27 +237,29 @@ li {
   gap: 20px;
   background-color: white;
   text-align: left;
+  
 }
 
 .testimonial {
   max-width: 30%;
   padding: 15px;
   background-color: white;
+  
+
 }
 .Kam {
-  font-weight: 50;
-  text-align:center;
+  margin-top: 10%;
+  font-weight:lighter;
+  text-align:left;
+
 }
 
 .testimonial p {
-  line-height: 1.6;
+  line-height: 1;
   margin-bottom: 10px;
 }
 
-.testimonial h4 {
-  text-align: right;
-  margin: 0;
-}
+
 .button-container {
   text-align: center;
   margin-top: 10px;
@@ -287,8 +296,15 @@ li {
 
 .title {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: #333;
+  
+
+
+}
+.border1 {
+  border-bottom: 1px solid black;
+  width: fit-content;
 }
 
 .subtitle {
@@ -298,9 +314,10 @@ li {
 }
 
 .rating {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: black;
   margin-bottom: 2rem;
+  font-weight: bolder;
 }
 
 .projects-container {
@@ -346,7 +363,7 @@ li {
   background-color: #b9b8b4;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 20px 40px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;

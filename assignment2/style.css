@@ -108,84 +108,118 @@ h2 {
   background-color: black;
   color: #f7f4f4;
 }
-.fontsize{
+
+.fontsize {
   font-size: 50px;
-}.fontsize::before {
-  content: "➕";         
-  margin-right:1px;     
-  font-size: 50px;       
-          
 }
+
+.fontsize::before {
+  content: "➕";
+  margin-right: 1px;
+  font-size: 50px;
+}
+
 .line {
   border-top: 2px solid #faf7f7;
   margin: 20px 0;
 }
+
 .first-line {
   margin-bottom: 60px;
 }
+
 .second-line {
   margin-top: 60px;
   margin-bottom: 30px;
 }
+
 .list {
   display: flex;
   gap: 100px;
 }
+
 ul {
-  
   padding: 0;
-  margin-bottom: 20px; 
-  list-style:none;
+  margin-bottom: 20px;
+  list-style: none;
 }
+
 li {
   margin-bottom: 15px;
-  padding-left:20px ;
+  padding-left: 20px;
 }
-li::before { content: "+";  color: #fff;  font-size: 10px; font-weight:900; }
+
+li::before {
+  content: "+";
+  color: #fff;
+  font-size: 10px;
+  font-weight: 900;
+}
 
 .content-container {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
   margin-top: 30px;
+  gap: 20px;
 }
+
 .text-content {
-  margin-right: 20%;
+  flex: 2;
+  margin-right: 20px;
 }
+
 .contact-section {
   margin-top: 40px;
-  
 }
+
 .contact-section .divider {
   border-top: 2px solid white;
   margin: 20px 0;
+}
 
+.contact-info {
+  display: flex;
+  justify-content:left;
+  gap: 90px;
+  margin-top: 30px;
 }
-.contact-info p {
-  margin: 5px 0;
-  
+
+.contact-column {
+  text-align:left;
 }
-.contact-info a {
+
+.contact-column .label {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-column a {
+  font-size: 30px;
   color: #f7f4f4;
-  text-decoration: none;
+  text-decoration:underline;
 }
-.contact-info a:hover {
+
+.contact-column a:hover {
   text-decoration: underline;
-}
-.contactspan {
-  font-size:35px;
 
 }
+
 .form-container {
+  
   background-color: #151516;
   padding: 60px;
   border-radius: 5px;
-  
-  width: 60%;
+  width: 100%;
   max-width: 600px;
-  margin-bottom: 10%;
+  margin: 0;
   position: relative;
   display: block;
+  box-sizing: border-box;
 }
+
 .form-container input,
 .form-container textarea,
 .form-container button {
@@ -196,24 +230,29 @@ li::before { content: "+";  color: #fff;  font-size: 10px; font-weight:900; }
   background-color: #151516;
   color: #fff;
 }
+
 .form-container label {
   margin-bottom: 5px;
   display: block;
 }
+
 .form-container .name-fields {
   display: flex;
   gap: 10px;
 }
+
 .form-container .field {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
+
 .form-container button {
   background-color: #8a8985;
   color: #333;
   cursor: pointer;
 }
+
 .form-container button:hover {
   background-color: white;
 }

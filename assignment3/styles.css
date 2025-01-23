@@ -16,7 +16,7 @@ a {
 
 body {
   font-family: "Roboto", serif;
-
+  background-color: #f9f9fb;
   line-height: 1.5;
 }
 
@@ -49,7 +49,10 @@ body {
   font-size: 16px;
   transition: color 0.3s;
 }
-
+.nav-links p{
+  margin-right: 20px;
+  font-weight: bolder;
+}
 .matches-bar {
   background-color: #0398dc;
   color: #fbfbfb;
@@ -201,24 +204,41 @@ body {
   gap: 25px;
   width: 350px;
   margin-right: 30px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column
+
 }
 
-.must-watch,
+.must-watch {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.must-watch img {
+  width: 264px;
+  height: 148px;
+  border-radius: 5%;
+}
+.must-watch h2 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000000;
+}
+
 .number-crunching {
   background-color: #fff;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.must-watch img,
+
 .number-crunching img {
   width: 264px;
   height: 148px;
   border-radius: 5%;
 }
-.must-watch h2,
 .number-crunching h2 {
   margin-bottom: 10px;
   font-size: 16px;
@@ -228,12 +248,11 @@ body {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: auto;
-  max-height: 550px;
-  max-width: 900px;
-}
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+  overflow:auto;
+  max-height : 550px;
+  max-width : 900px;
+} 
 .headline1-text h1 {
   font-size: 22px;
   color: #2b2c2d;
@@ -326,7 +345,8 @@ body {
   padding: 15px;
   gap: 10px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .must-watch h2,
@@ -524,7 +544,7 @@ body {
 }
 .team-fix h1 {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .img-team {
   width: 88px;
@@ -544,13 +564,15 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 5px;
-  height: 300px;
+  height: 270px;
 }
 .Key-Series h1 {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom:10px;
 }
 .pill-button {
+  border: 0.5px solid #868a8f;
+
   color: #868a8f;
   background-color: #fff;
   padding: 9px 8px 5px 16px;
@@ -575,4 +597,20 @@ footer {
   font-size: large;
   font-weight: bolder;
   border: #000;
+}
+.p-buttons{
+margin-left: 130px;
+}
+.pill-button1 {
+  border: 0.5px solid #b4b9be;
+
+  color: #868a8f;
+  background-color: #f9f9fb;
+  padding: 4px 8px 4px 16px;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 16px;
 }
